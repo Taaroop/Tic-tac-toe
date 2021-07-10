@@ -1,4 +1,3 @@
-
 import turtle
 
 def draw_grid():
@@ -201,63 +200,36 @@ if deter1 == 0 and deter2 == 0:
 else:
     if deter1 == 1:
         v_type_ini = matching_check(player1)
-        v_type = v_type_ini[1]
-        turtle.pensize(3)
-        if v_type == "A" or v_type == "B" or v_type == "C":
-            goto_center(v_type + "1")
-            turtle.setheading(0)
-            turtle.pendown()
-            turtle.forward(160)
-        elif v_type == "1" or v_type == "2" or v_type == "3":
-            goto_center("A" + v_type)
-            turtle.setheading(270)
-            turtle.pendown()
-            turtle.forward(160)
-        elif v_type == "c":
-            goto_center("A1")
-            turtle.setheading(0)
-            turtle.right(45)
-            turtle.pendown()
-            turtle.forward(226)
-        elif v_type == "d":
-            goto_center("A3")
-            turtle.setheading(180)
-            turtle.left(45)
-            turtle.pendown()
-            turtle.forward(226) 
-
-        
+   
     elif deter2 == 1:
         v_type_ini = matching_check(player2)
-        v_type = v_type_ini[1]
-        turtle.pensize(3)
-        if v_type == "A" or v_type == "B" or v_type == "C":
-            goto_center(v_type + "1")
-            turtle.setheading(0)
-            turtle.pendown()
-            turtle.forward(160)
-        elif v_type == "1" or v_type == "2" or v_type == "3":
-            goto_center("A" + v_type)
-            turtle.setheading(270)
-            turtle.pendown()
-            turtle.forward(160)
-        elif v_type == "c":
-            goto_center("A1")
-            turtle.setheading(0)
-            turtle.right(45)
-            turtle.pendown()
-            turtle.forward(226)
-        elif v_type == "d":
-            goto_center("A3")
-            turtle.setheading(180)
-            turtle.left(45)
-            turtle.pendown()
-            turtle.forward(226)
+        
+    v_type = v_type_ini[1]
+    turtle.pensize(3)
+        
+    if v_type == "A" or v_type == "B" or v_type == "C":
+        goto_center(v_type + "1")
+        turtle.setheading(0)
+        turtle.pendown()
+        turtle.forward(160)
+    elif v_type == "1" or v_type == "2" or v_type == "3":
+        goto_center("A" + v_type)
+        turtle.setheading(270)
+        turtle.pendown()
+        turtle.forward(160)
+    elif v_type == "c":
+        goto_center("A1")
+        turtle.setheading(0)
+        turtle.right(45)
+        turtle.pendown()
+        turtle.forward(226)
+    elif v_type == "d":
+        goto_center("A3")
+        turtle.setheading(180)
+        turtle.left(45)
+        turtle.pendown()
+        turtle.forward(226)
 
 turtle.penup()
 turtle.home()
         
-        
-
-
-    
